@@ -3,14 +3,16 @@
 using namespace std; //palabras clave    cout y cin
 
 int main()    //aqui empieza el algoritmo
-{
+{  //declaracion de variables
     int time=0 ;
     float value=0.0, inc=0.0;
     char categoria = 'o';
+   //ingresar datos
     cout<<"ingrese sueldo : ";
     cin>> value;
     cout<<"ingrese tiempo en años : ";
     cin>> time;
+    //declaracion de condiciones y posibilidades
     if (time>20&&time<=30)
     {
         categoria= 'A';
@@ -38,7 +40,7 @@ int main()    //aqui empieza el algoritmo
 
 
         }
-
+        // declaracion de casos
         switch (categoria)
         {
 
@@ -56,7 +58,7 @@ int main()    //aqui empieza el algoritmo
             inc=value*0.5;
             break;
         }
-
+        //se muestran los datos
         cout<<" categoria = "<< categoria<< endl;
         cout<<" aumento = " << inc<<endl;
 
