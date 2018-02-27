@@ -18,7 +18,6 @@ int main()    //aqui empieza el algoritmo
     else
     {
         if (time>15&&time<=20 )
-
         {
             categoria='B' ;
         }
@@ -32,41 +31,35 @@ int main()    //aqui empieza el algoritmo
             {
                 if (time>0&&time<=10)
                 {
-
                     categoria='D';
                 }
             }
+
+
+
         }
 
+        switch (categoria)
+        {
 
+        case 'A' :
 
+            inc=value*0.15;
+            break;
+        case 'B':
+            inc=value*0.12;
+            break;
+        case 'C' :
+            inc=value*0.10;
+            break;
+        case 'D' :
+            inc=value*0.5;
+            break;
+        }
+
+        cout<<" categoria = "<< categoria<< endl;
+        cout<<" aumento = " << inc<<endl;
+
+        return 0;
     }
-
-    switch (categoria)
-    {
-
-    case 'A' :
-
-        inc=value*0.15;
-        break;
-    case 'B':
-        inc=value*0.12;
-        break;
-    case 'C' :
-        inc=value*0.10;
-        break;
-    case 'D' :
-        inc=value*0.5;
-        break;
-    }
-
-    cout<<" categoria = "<< categoria<< endl;
-    cout<<" aumento = " << inc;
-
-
-
-
-
-
-    return 0;
 }
